@@ -17,6 +17,8 @@ import PostJob from "./components/Job/PostJob";
 import NotFound from "./components/NotFound/NotFound";
 import MyJobs from "./components/Job/MyJobs";
 import Education from "./components/Education/Education";
+import GoogleTranslate from "./components/Extras/GoogleTranslate";
+
 
 const App = () => {
   const { isAuthorized, setIsAuthorized, setUser } = useContext(Context);
@@ -41,6 +43,7 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
+      <GoogleTranslate /> 
         <Navbar />
         <Routes>
           <Route path="/login" element={<Login />} />
